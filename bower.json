@@ -1,0 +1,25 @@
+{
+  "name": "recruitment",
+  "version": "0.0.0",
+  "authors": [
+    "rafriki <johnparkinson142@gmail.com>"
+  ],
+  "description": "HR GO Recruitment Page",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "http://careers.hrgo.co.uk",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.2.0",
+    "font-awesome": "~4.2.0",
+    "animate.css": "~3.2.0",
+    "WOW": "~1.0.1"
+  }
+}
