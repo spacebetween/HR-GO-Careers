@@ -34,7 +34,6 @@ li {
 }
 li:before {
   content: '\2022';
-  display: block;
   position: relative;
   max-width: 0px;
   max-height: 0px;
@@ -42,6 +41,13 @@ li:before {
   top: -3px;
   color: #0054a6;
   font-size: 20px;
+}
+.btn-hrgo {
+  background-color: #0054a6;
+  border-radius: 0;
+  color: white;
+  letter-spacing: 0.1em;
+  margin-bottom: 30px;
 }
 .navbar-default {
   background: #FFF;
@@ -127,17 +133,25 @@ li:before {
   height: 700px;
   background: url(../img/benefits.png) center no-repeat;
 }
+#benefits #hoff {
+  width: 100%;
+  height: 470px;
+  background: url(../img/hoff.png) center no-repeat;
+}
 #benefits p {
   margin-top: 40px;
+}
+#benefits ul {
+  margin-left: -20px;
 }
 #careers {
   background: url(../img/careers.png) center no-repeat;
 }
 #careers .grey-div {
-  margin-top: 100px;
+  margin-top: 20px;
   margin-bottom: 280px;
   background-color: rgba(109, 74, 68, 0.7);
-  padding: 30px;
+  padding: 15px;
   color: white !important;
   font-weight: 100;
   font-style: italic;
@@ -156,6 +170,11 @@ li:before {
   background-color: #d9e5f2;
 }
 #values .lead {
+  margin-top: 40px;
+  font-size: 26px;
+  color: #0054a6;
+}
+#contact .lead {
   margin-top: 40px;
   font-size: 26px;
   color: #0054a6;
