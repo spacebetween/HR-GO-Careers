@@ -1,6 +1,6 @@
 @blue: #0054a6;
 @light-blue: #D9E5F2;
-@light-brown: rgba(109,74,68,0.7);
+@light-grey: #BBB;
 
 @normal: 300;
 @heavy: 500;
@@ -23,8 +23,8 @@ body {
     padding-top:100px;
 }
 p {
-    letter-spacing:.12em;
-    font-weight:@heavy;
+    
+    font-weight:@normal-heavy;
     margin:30px 0;
     color: black;
 }
@@ -58,20 +58,14 @@ li {
     color: white;
     letter-spacing: 0.1em;
     margin-bottom: 30px;
+
+}
+.btn-hrgo:hover{
+    background-color: @light-grey;
+    color: white;
 }
 
 // sections
-
-.navbar-default {
-    background:#FFF;
-    border:none;
-    font-size:18px;
-    .navbar-brand {
-        img {
-            max-width:200px;
-            margin:10px;
-        }
-    }
     .nav {
         margin-top:25px;
         color:#000;
@@ -88,6 +82,16 @@ li {
             font-weight: @normal;
         }
     }
+.navbar-default {
+    background:#FFF;
+    border:none;
+    font-size:18px;
+    .navbar-brand {
+        img {
+            max-width:200px;
+            margin:10px;
+        }
+    }
     .navbar-header {
         height:100px;
     }
@@ -101,11 +105,14 @@ li {
 
 
 #top {
-    background:url(../img/top.png) center no-repeat;
-    min-height:770px;
-    h1 {
-        margin-top:175px;
+    @media (min-width: 950px) {
+      background:url(../img/top.png) center no-repeat;
+      min-height:770px;
+        h1 {
+            margin-top:175px;
+        }
     }
+    
     .lead {
         .section-lead
     }
@@ -122,10 +129,12 @@ li {
 }
 #inspiration {
     background:url(../img/peeps.png) repeat;
-    #trumpet {
-        width:100%;
-        height:700px;
-        background:url(../img/trumpet.png) center no-repeat;
+    #trumpet {  
+        @media (min-width: 650px) {
+            width:100%;
+            height:700px;
+            background:url(../img/trumpet.png) center no-repeat;
+        }
     }
     .lead{
         .section-lead;
@@ -140,15 +149,17 @@ li {
     .lead{
         .section-lead;
     }
-    #girl {
-        width:100%;
-        height:700px;
-        background:url(../img/benefits.png) center no-repeat;
-    }
-    #hoff {
-        width:100%;
-        height:470px;
-        background:url(../img/hoff.png) center no-repeat;
+    @media (min-width: 650px) {
+        #girl {
+            width:100%;
+            height:700px;
+            background:url(../img/benefits.png) center no-repeat;
+        }
+        #hoff {
+            width:100%;
+            height:470px;
+            background:url(../img/hoff.png) center no-repeat;
+        }
     }
     p{
         margin-top:40px;
@@ -159,16 +170,6 @@ li {
 }
 
 #careers {
-    background:url(../img/careers.png) center no-repeat;
-    .grey-div {
-        margin-top: 20px;
-        margin-bottom: 280px;
-        background-color: @light-brown;
-        padding: 15px;
-        color: white !important;
-        font-weight: @light;
-        font-style: italic;
-    }
     .lead{
         .section-lead;
     }
