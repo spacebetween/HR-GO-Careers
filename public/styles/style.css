@@ -28,6 +28,11 @@ h1 {
 h1 span {
   color: #0054a6;
 }
+@media (max-width: 500px) {
+  h1 {
+    font-size: 40px;
+  }
+}
 li {
   list-style: none;
 }
