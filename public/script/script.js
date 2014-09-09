@@ -1,6 +1,7 @@
 new WOW({
     animateClass: 'animated',
-    offset: 200
+    offset: 200,
+    mobile: false
 }).init();
 
 $(function() {
